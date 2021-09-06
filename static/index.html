@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <nav-header></nav-header>
+        <header-second></header-second>
+        <section class="showcase">
+            <show-case-card
+                :cards="cards"
+                v-for="(card, idx) in cards"
+                :card="card"
+                :key="idx"
+                :name="card.product_name"
+                :price="card.price"
+                :id="card.id_product">
+            </show-case-card>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="AppShowCaseCard.js"></script>
+    <script src="AppShowCase.js"></script>
+    <script src="HeaderSecond.js"></script>
+    <script src="BascetInNavCard.js"></script>
+    <script src="BascetInNav.js"></script>
+    <script src="Nav.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
