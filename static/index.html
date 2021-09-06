@@ -12,6 +12,7 @@
         <nav-header></nav-header>
         <header-second></header-second>
         <section class="showcase">
+            <showcase-filter></showcase-filter>
             <show-case-card
                 :cards="cards"
                 v-for="(card, idx) in cards"
@@ -21,7 +22,10 @@
                 :price="card.price"
                 :id="card.id_product">
             </show-case-card>
+            <showcase-footer></showcase-footer>
         </section>
+        <advantage></advantage>
+        <v-footer></v-footer>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
@@ -31,6 +35,10 @@
     <script src="BascetInNavCard.js"></script>
     <script src="BascetInNav.js"></script>
     <script src="Nav.js"></script>
+    <script src="Footer.js"></script>
+    <script src="ShowcaseFilter.js"></script>
+    <script src="ShowcaseFooter.js"></script>
+    <script src="Advantage.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
